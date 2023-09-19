@@ -478,7 +478,8 @@ address {
 
 .backdrop {
 	position: fixed;
-	inset: 0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(46, 47, 66, 0.4);
@@ -515,7 +516,7 @@ address {
 
 .modal-close {
 	background-color: #e7e9fc;
-	border: 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	position: absolute;
 	top: 24px;
@@ -584,7 +585,6 @@ address {
 
 .modal-input:focus {
 	border-color: #4d5ae5;
-	fill: #4d5ae5;
 }
 
 .icon-container {
@@ -602,7 +602,7 @@ address {
 .modal-container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -640,6 +640,12 @@ address {
 	letter-spacing: 0.04em;
 }
 
+.modal-checkbox-label:checked {
+	background-color: #404bbf;
+	border: none;
+	fill: #f4f4fd;
+}
+
 .modal-span {
 	color: #4d5ae5;
 	width: 16px;
@@ -654,9 +660,6 @@ address {
 	fill: transparent;
 }
 
-.icon-span {
-}
-
 .modal-link {
 	color: #4d5ae5;
 }
@@ -669,7 +672,7 @@ address {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
 	cursor: pointer;
 	display: block;
