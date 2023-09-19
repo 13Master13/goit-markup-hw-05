@@ -510,12 +510,17 @@ address {
 
 .modal-close {
 	background-color: #e7e9fc;
-	border: 1px rgba(0, 0, 0, 0.1);
+	border: 1px #0000001a;
 	border-radius: 50%;
-	padding: 8px;
 	position: absolute;
 	top: 24px;
 	right: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.modal-icons-close {
+	fill: #2e2f42;
 }
 
 .modal-title {
@@ -524,21 +529,62 @@ address {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	margin-bottom: 16px;
+	text-align: center;
+}
+
+label {
+	color: #8e8f99;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+}
+
+.modal-container > input {
+	height: 40px;
+	border: none;
+	border: 1px solid #8e8f99;
+	padding-left: 40px;
+	border-radius: 4px;
+	outline: none;
 }
 
 .modal-form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 16px;
 }
 
-.modal-name {
+.modal-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
-.modal-phone {
-}
-
-.modal-email {
+.modal-icons {
+	position: absolute;
+	top: 10px;
+	left: 16px;
+	transform: translateY(50%);
 }
 
 .modal-checkbox {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 24px;
+}
+
+textarea {
+	color: rgba(46, 47, 66, 0.4);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	border: none;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	outline: none;
 }
 
 .modal-text {
@@ -562,9 +608,22 @@ address {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	width: 169px;
+	margin: 0 auto;
 	padding: 16px 32px;
 	text-align: center;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-container input:focus {
+	border: 1px solid #4d5ae5;
+}
+
+.modal-container input:focus + svg {
+	fill: #4d5ae5;
+}
+
+.modal-container input:focus::placeholder {
+	color: #4d5ae5;
 }
