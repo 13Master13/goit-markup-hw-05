@@ -600,6 +600,10 @@ address {
 }
 
 .modal-container {
+	margin-bottom: 8px;
+}
+
+.modal-container:last-child {
 	margin-bottom: 16px;
 }
 
