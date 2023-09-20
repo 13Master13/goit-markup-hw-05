@@ -566,6 +566,7 @@ address {
 	font-weight: 400;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
+	display: block;
 	margin-bottom: 4px;
 }
 
@@ -599,7 +600,7 @@ address {
 }
 
 .modal-container {
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 .modal-textarea {
