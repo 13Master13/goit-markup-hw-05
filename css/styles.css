@@ -596,7 +596,7 @@ address {
 .modal-container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 }
 
 .modal-textarea {
