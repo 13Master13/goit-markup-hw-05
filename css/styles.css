@@ -436,6 +436,10 @@ address {
 	max-width: 264px;
 }
 
+.footer-container-center {
+	margin-right: 80px;
+}
+
 .footer-social {
 	color: #fff;
 	font-weight: 500;
@@ -472,6 +476,57 @@ address {
 
 .footer-icons {
 	fill: #f4f4fd;
+}
+
+.footer-container-rigth {
+}
+
+.footer-subscribe {
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
+}
+
+.footer-form {
+	display: flex;
+	gap: 24px;
+}
+
+.subscribe-input {
+	color: #fff;
+	background-color: transparent;
+	width: 264px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	padding-left: 16px;
+}
+
+.subscribe-button {
+	color: #fff;
+	background-color: #4d5ae5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 165px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	bottom: none;
+	border-radius: 4px;
+}
+
+.subscribe-icon {
+	margin-bottom: 16px;
 }
 
 /* Модальне вікно */
@@ -682,7 +737,6 @@ address {
 }
 
 .modal-button {
-	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	background-color: #4d5ae5;
 	font-size: 16px;
